@@ -28,7 +28,7 @@ namespace CA3
             }
         }
 
-        public Player(string name,string surname, Position perferredPosition)
+        public Player(string name, string surname, Position perferredPosition)
         {
             Name = name;
             Surname = surname;

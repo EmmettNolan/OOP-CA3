@@ -24,7 +24,7 @@ namespace CA3
         List<Player> allPlayers = new List<Player>();
         List<Player> selectedPlayers = new List<Player>();
 
-        public string Surname { get; private set; }
+        public string Surname { get; set; }
 
         public MainWindow()
         {
@@ -59,7 +59,7 @@ namespace CA3
             //Create List
             void PlayerList()
             {
-                RandName();
+                RandName(); 
                 Player p1 = new Player(Name, Surname, Player.Position.Goalkeeper);
                 Player p2 = new Player(Name, Surname, Player.Position.Goalkeeper);
                 Player p3 = new Player(Name, Surname, Player.Position.Defender);
@@ -79,8 +79,6 @@ namespace CA3
                 Player p17 = new Player(Name, Surname, Player.Position.Forward);
                 Player p18 = new Player(Name, Surname, Player.Position.Forward);
                 Player p19 = new Player("Emmett", "Nolan", Player.Position.Defender);
-
-                List<Player> allPlayers = new List<Player>();
 
                 allPlayers.Add(p1);
                 allPlayers.Add(p2);
@@ -103,7 +101,7 @@ namespace CA3
                 allPlayers.Add(p19);
             }
 
-
+            //Display Players in Listbox
             allPlayersLB.ItemsSource = allPlayers;
 
             //Sorting by first name then second name.
