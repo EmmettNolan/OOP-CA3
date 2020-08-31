@@ -20,6 +20,8 @@ namespace CA3
     /// </summary>
     public partial class MainWindow : Window
     {
+        public enum Position { Goalkeeper, Defender, Midfielder, Forward}
+
         public MainWindow()
         {
             InitializeComponent();
