@@ -1,0 +1,5 @@
+C:\Users\Emmett\Documents\GitHub\OOP-CA3\CA3\CA3\obj\Debug\CA3.csprojAssemblyReference.cache
+C:\Users\Emmett\Documents\GitHub\OOP-CA3\CA3\CA3\obj\Debug\MainWindow.g.cs
+C:\Users\Emmett\Documents\GitHub\OOP-CA3\CA3\CA3\obj\Debug\App.g.cs
+C:\Users\Emmett\Documents\GitHub\OOP-CA3\CA3\CA3\obj\Debug\CA3_MarkupCompile.cache
+C:\Users\Emmett\Documents\GitHub\OOP-CA3\CA3\CA3\obj\Debug\CA3_MarkupCompile.lref

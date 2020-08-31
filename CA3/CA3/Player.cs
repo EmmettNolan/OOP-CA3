@@ -79,6 +79,33 @@ namespace CA3
             Player p16 = new Player(Name, Surname, Player.Position.Forward);
             Player p17 = new Player(Name, Surname, Player.Position.Forward);
             Player p18 = new Player(Name, Surname, Player.Position.Forward);
+
+            List<Player> allPlayers = new List<Player>();
+
+            allPlayers.Add(p1);
+            allPlayers.Add(p2);
+            allPlayers.Add(p3);
+            allPlayers.Add(p4);
+            allPlayers.Add(p5);
+            allPlayers.Add(p6);
+            allPlayers.Add(p7);
+            allPlayers.Add(p8);
+            allPlayers.Add(p9);
+            allPlayers.Add(p10);
+            allPlayers.Add(p11);
+            allPlayers.Add(p12);
+            allPlayers.Add(p13);
+            allPlayers.Add(p14);
+            allPlayers.Add(p15);
+            allPlayers.Add(p16);
+            allPlayers.Add(p17);
+            allPlayers.Add(p18);
+        }
+
+        //Order FirstName, LastName, DateOfBirth, Position
+        public override string ToString()
+        {
+            return $"{Name} {Surname} {DateOfBirth} {PerferredPosition}";
         }
     }
 }
