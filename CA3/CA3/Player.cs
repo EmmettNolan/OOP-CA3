@@ -8,6 +8,7 @@ namespace CA3
 {
     class Player
     {
+        //Enum
         public enum Position { Goalkeeper, Defender, Midfielder, Forward }
 
         //Properties
@@ -25,6 +26,27 @@ namespace CA3
                     Age--;
                 return Age;
             }
+        }
+
+        //Random Player Creation
+        private void RandName()
+        {
+            string[] firstNames = new string[]
+            {
+                "Adam", "Amelia", "Ava", "Chloe", "Conor", "Daniel", "Emily",
+                "Emma", "Grace", "Hannah", "Harry", "Jack", "James",
+                "Lucy", "Luke", "Mia", "Michael", "Noah", "Sean", "Sophie"};
+
+
+            string[] lastNames = new string[]
+                {
+                "Brennan", "Byrne", "Daly", "Doyle", "Dunne", "Fitzgerald", "Kavanagh",
+                "Kelly", "Lynch", "McCarthy", "McDonagh", "Murphy", "Nolan", "O'Brien",
+                "O'Connor", "O'Neill", "O'Reilly", "O'Sullivan", "Ryan", "Walsh"
+                };
+
+            Random rnd = new Random();
+            int index = rnd.Next(firstNames.Length) + rnd.Next(lastNames.Length);
         }
     }
 }
