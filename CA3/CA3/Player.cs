@@ -28,6 +28,15 @@ namespace CA3
             }
         }
 
+        public Player(string name,string surname, Position perferredPosition)
+        {
+            Name = name;
+            Surname = surname;
+            PerferredPosition = perferredPosition;
+        }
+
+        //Methods
+
         //Random Player Creation
         private void RandName()
         {
@@ -47,6 +56,29 @@ namespace CA3
 
             Random rnd = new Random();
             int index = rnd.Next(firstNames.Length) + rnd.Next(lastNames.Length);
+        }
+
+        //Create List
+        private void PlayerList()
+        {
+            Player p1 = new Player(Name, Surname, Player.Position.Goalkeeper);
+            Player p2 = new Player(Name, Surname, Player.Position.Goalkeeper);
+            Player p3 = new Player(Name, Surname, Player.Position.Defender);
+            Player p4 = new Player(Name, Surname, Player.Position.Defender);
+            Player p5 = new Player(Name, Surname, Player.Position.Defender);
+            Player p6 = new Player(Name, Surname, Player.Position.Defender);
+            Player p7 = new Player(Name, Surname, Player.Position.Defender);
+            Player p8 = new Player(Name, Surname, Player.Position.Defender);
+            Player p9 = new Player(Name, Surname, Player.Position.Midfielder);
+            Player p10 = new Player(Name, Surname, Player.Position.Midfielder);
+            Player p11 = new Player(Name, Surname, Player.Position.Midfielder);
+            Player p12 = new Player(Name, Surname, Player.Position.Midfielder);
+            Player p13 = new Player(Name, Surname, Player.Position.Midfielder);
+            Player p14 = new Player(Name, Surname, Player.Position.Midfielder);
+            Player p15 = new Player(Name, Surname, Player.Position.Forward);
+            Player p16 = new Player(Name, Surname, Player.Position.Forward);
+            Player p17 = new Player(Name, Surname, Player.Position.Forward);
+            Player p18 = new Player(Name, Surname, Player.Position.Forward);
         }
     }
 }
